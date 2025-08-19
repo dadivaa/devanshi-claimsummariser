@@ -3,3 +3,4 @@ Manual review of claims is slow, prone to human error, and resource-intensive. M
 The Insurance Claim Document Summarizer addresses this challenge by automating document parsing, extracting key information, and generating concise structured summaries. It leverages regex-based extraction rules, OCR for scanned inputs, and quantized Mistral 7B LLM for cleaning ambiguous text. The application supports Motor, Life, and Health Insurance and provides outputs in multiple export formats.
 
 
+
