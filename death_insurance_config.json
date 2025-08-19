@@ -1,0 +1,63 @@
+{
+    "fields": {
+        "Policy Number": [
+            "Policy No\\.?[:\\-]*\\s*(.+)"
+        ],
+        "Name of Life Assured": [
+            "Life Assured[:\\-]*\\s*(.+)"
+        ],
+        "Father's / Spouse Name": [
+            "Father.?/?Spouse Name[:\\-]*\\s*(.+)"
+        ],
+        "Date of Death": [
+            "Date of Death[:\\-]*\\s*([\\d\\-/]+)"
+        ],
+        "Place of Death": [
+            "Place of Death[:\\-]*\\s*(.+)"
+        ],
+        "Nature of Death": [
+            "Nature of Death[:\\-]*\\s*(.+)"
+        ],
+        "Cause of Death": [
+            "Cause of Death[:\\-]*\\s*(.+)"
+        ],
+        "Family Doctor": [
+            "Family Doctor[:\\-]*\\s*(.+)"
+        ],
+        "Last Treated Doctor": [
+            "Last treated Doctor[:\\-]*\\s*(.+)"],
+        "Claimant Name": [
+            "Claimant Name[:\\-]*\\s*(.+)"],
+        "DOB": [
+            "DOB[:\\-]*\\s*([\\d\\-/]+)"
+        ],
+        "Relation with LA": [
+            "Relation with LA[:\\-]*\\s*(.+)"
+        ],
+        "PAN": [
+            "PAN[:\\-]*\\s*(.+)"],
+        "Contact": [
+            "Contact[:\\-]*\\s*(.+)"],
+        "Email": [
+            "Email[:\\-]*\\s*(.+)"],
+        "Address": [
+            "Address[:\\-]*\\s*(.+)"],
+        "Bank Name & Branch": [
+            "Bank Name & Branch[:\\-]*\\s*(.+)"],
+        "Account Number": [
+            "Account No\\.?[:\\-]*\\s*(.+)"],
+        "IFSC": [
+            "IFSC[:\\-]*\\s*(.+)"],
+        "MICR": [
+            "MICR[:\\-]*\\s*(.+)"],
+        "Payout Option": [
+            "Payout Option[:\\-]*\\s*(.+)"],
+        "Declaration Date": [
+            "Declaration Date[:\\-]*\\s*([\\d\\-/]+)",
+            "Date[:\\-]*\\s*([\\d\\-/]+)"
+        ],
+        "Place": [
+            "Place[:\\-]*\\s*(.+)"
+        ]
+    }
+}  

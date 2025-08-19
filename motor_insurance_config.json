@@ -1,0 +1,62 @@
+{
+    "fields": {  
+        "Policy Number": [
+            "Policy No\\.?[:\\-]*\\s*(.+)"   
+        ],
+        "Insured Name": [
+            "Name as per Policy[:\\-]*\\s*(.+)"
+        ],
+        "Vehicle Number": [
+            "Reg No[:\\-]*\\s*(.+)"
+        ],
+        "Engine Number": [
+            "Engine No[:\\-]*\\s*(.+)"
+        ],
+        "Chassis Number": [
+            "Chassis No[:\\-]*\\s*(.+)"],
+        "Make": [
+            "Make[:\\-]*\\s*(\\w+)"
+        ],
+        "Model": [
+            "Model[:\\-]*\\s*(\\w+)"
+        ],
+        "Registration Date": [
+            "Reg Date[:\\-]*\\s*([\\d\\-/]+)"
+        ],
+        "Accident Date": [
+            "Accident Date[:\\-]*\\s*([\\d\\-/]+)",
+            "Date[:\\-]*\\s*([\\d\\-/]+)"
+        ],
+        "Accident Time": [
+            "Time[:\\-]*\\s*([\\d: ]+[APMapm]{2})"
+        ],
+        "Accident Location": [
+            "Location[:\\-]*\\s*(.+)"
+        ],
+        "Damage Description": [
+            "Description[:\\-]*\\s*(.+)"
+        ],
+        "FIR Number": [
+            "FIR[:\\-]*\\s*(.+)"
+        ],
+        "Driver Name": [
+            "Driver Name[:\\-]*\\s*(.+)"
+        ],
+        "License Number": [
+            "License No[:\\-]*\\s*(.+)"
+        ],
+        "License Validity": [
+            "Expiry[:\\-]*\\s*([\\d\\-/]+)"
+        ],
+        "Issuing Authority": [
+            "RTO[:\\-]*\\s*(.+)"],
+        "Garage Name": [
+            "Garage[:\\-]*\\s*(.+)"],
+        "Estimated Loss": [
+            "Est\\.? Loss[:\\-]*\\s*Rs\\.?\\s*([\\d,]+)"
+        ],
+        "Other Insurance": [
+            "Other Insurance[:\\-]*\\s*(.+)"
+        ]
+    }
+}  

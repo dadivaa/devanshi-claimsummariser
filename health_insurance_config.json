@@ -1,0 +1,159 @@
+{  
+    "fields": {
+        "Policy Number": [
+            "Policy No\\.?[:\\-]*\\s*(.+)",
+            "Policy Number[:\\-]*\\s*(.+)",
+            "Policy ID[:\\-]*\\s*(.+)"
+        ],
+        "UHID": [
+            "UHID[:\\-]*\\s*(.+)",
+            "Unique Health ID[:\\-]*\\s*(.+)",
+            "U\\.H\\.I\\.D\\.[:\\-]*\\s*(.+)"
+        ],
+        "Intimation Number": [
+            "Intimation Number[:\\-]*\\s*(.+)",
+            "Intimation No\\.?[:\\-]*\\s*(.+)",
+            "Claim Intimation No\\.?[:\\-]*\\s*(.+)"
+        ],
+        "Insured Name": [
+            "Name[:\\-]*\\s*(Mr\\.?\\s*.+)",
+            "Insured Name[:\\-]*\\s*(.+)",
+            "Name of Insured[:\\-]*\\s*(.+)",
+            "Patient Name[:\\-]*\\s*(.+)"
+        ],
+        "DOB": [
+            "Date of Birth[:\\-]*\\s*([\\d\\-/]+)",
+            "DOB[:\\-]*\\s*([\\d\\-/]+)",
+            "Birth Date[:\\-]*\\s*([\\d\\-/]+)"
+        ],
+        "Gender": [
+            "Gender[:\\-]*\\s*(Male|Female|M|F)",
+            "Sex[:\\-]*\\s*(Male|Female|M|F)"
+        ],
+        "Relationship to Primary Insured": [
+            "Relationship to Primary Insured[:\\-]*\\s*(.+)",
+            "Relation to Primary Insured[:\\-]*\\s*(.+)",
+            "Relation with Insured[:\\-]*\\s*(.+)",
+            "Relationship[:\\-]*\\s*(.+)"
+        ],
+        "Registered Phone No": [
+            "Registered Phone No\\.?[:\\-]*\\s*(\\+?\\d[\\d\\s\\-()]{7,})",
+            "Registered Phone Number[:\\-]*\\s*(\\+?\\d[\\d\\s\\-()]{7,})",
+            "Phone No\\.?[:\\-]*\\s*(\\+?\\d[\\d\\s\\-()]{7,})",
+            "Phone Number[:\\-]*\\s*(\\+?\\d[\\d\\s\\-()]{7,})",
+            "Contact No\\.?[:\\-]*\\s*(\\+?\\d[\\d\\s\\-()]{7,})",
+            "Contact Number[:\\-]*\\s*(\\+?\\d[\\d\\s\\-()]{7,})",
+            "Mobile No\\.?[:\\-]*\\s*(\\+?\\d[\\d\\s\\-()]{7,})",
+            "Mobile Number[:\\-]*\\s*(\\+?\\d[\\d\\s\\-()]{7,})"
+        ],
+        "Email ID": [
+            "Registered E-mail ID[:\\-]*\\s*([a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\\.[a-zA-Z]{2,})",
+            "Email ID[:\\-]*\\s*([a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\\.[a-zA-Z]{2,})",
+            "Email[:\\-]*\\s*([a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\\.[a-zA-Z]{2,})"
+        ],
+        "Address": [
+            "Address[:\\-]*\\s*(.+?)(?:Registered Phone No|Registered Phone Number|Email ID|Registered E-mail ID|Occupation|Hospital Name|Bank Name|Policy Number|PAN|Date of Admission|Declaration Date|Claim Type|Total Expenses|Diagnosis|$)",
+            "Current Address[:\\-]*\\s*(.+?)(?:Registered Phone No|Registered Phone Number|Email ID|Registered E-mail ID|Occupation|Hospital Name|Bank Name|Policy Number|PAN|Date of Admission|Declaration Date|Claim Type|Total Expenses|Diagnosis|$)",
+            "Residing Address[:\\-]*\\s*(.+?)(?:Registered Phone No|Registered Phone Number|Email ID|Registered E-mail ID|Occupation|Hospital Name|Bank Name|Policy Number|PAN|Date of Admission|Declaration Date|Claim Type|Total Expenses|Diagnosis|$)"
+        ],
+        "Occupation": [
+            "Occupation[:\\-]*\\s*(.+?)(?:Hospital Name|Bank Name|Policy Number|PAN|Date of Admission|Declaration Date|Claim Type|Total Expenses|Diagnosis|$)"
+        ],
+        "Hospital Name": [
+            "Name of Hospital[:\\-]*\\s*(.+)",
+            "Hospital Name[:\\-]*\\s*(.+)",
+            "Hospital[:\\-]*\\s*(.+)",
+            "Hosp\\. Name[:\\-]*\\s*(.+)"
+        ],
+        "Admission Date": [
+            "Date of Admission[:\\-]*\\s*([\\d\\-/]+)",
+            "Admission Date[:\\-]*\\s*([\\d\\-/]+)",
+            "Admit Date[:\\-]*\\s*([\\d\\-/]+)"
+        ],
+        "Discharge Date": [
+            "Date of Discharge[:\\-]*\\s*([\\d\\-/]+)",
+            "Discharge Date[:\\-]*\\s*([\\d\\-/]+)",
+            "Discharge[:\\-]*\\s*([\\d\\-/]+)"
+        ],
+        "Diagnosis": [
+            "Diagnosis[:\\-]*\\s*(.+)",
+            "Final Diagnosis[:\\-]*\\s*(.+)",
+            "Primary Diagnosis[:\\-]*\\s*(.+)",
+            "Disease[:\\-]*\\s*(.+)"
+        ],
+        "Cause of Injury": [
+            "Cause of Injury[:\\-]*\\s*(.+)",
+            "Reason for Injury[:\\-]*\\s*(.+)",
+            "Injury Cause[:\\-]*\\s*(.+)",
+            "Nature of Injury[:\\-]*\\s*(.+)"
+        ],
+        "Treatment": [
+            "Treatment[:\\-]*\\s*(.+)",
+            "Treatment Given[:\\-]*\\s*(.+)",
+            "Procedures Performed[:\\-]*\\s*(.+)"
+        ],
+        "Room Category": [
+            "Room Category[:\\-]*\\s*(.+)",
+            "Room Type[:\\-]*\\s*(.+)"
+        ],
+        "Claim Type": [
+            "Type of Claim[:\\-]*\\s*(.+)",
+            "Claim Type[:\\-]*\\s*(.+)"
+        ],
+        "Total Expenses": [
+            "Total Expenses[:\\-]*\\s*[₹\\u20b9]?([\\d,\\.]+)",
+            "Total Amount[:\\-]*\\s*[₹\\u20b9]?([\\d,\\.]+)",
+            "Grand Total[:\\-]*\\s*[₹\\u20b9]?([\\d,\\.]+)"
+        ],
+        "Hospital Bill": [
+            "Hospital Bill\\s*[-—:]?\\s*[₹\\u20b9]?([\\d,\\.]+)",
+            "Hospital Charges[:\\-]*\\s*[₹\\u20b9]?([\\d,\\.]+)",
+            "Medical Bill[:\\-]*\\s*[₹\\u20b9]?([\\d,\\.]+)"
+        ],  
+        "Pharmacy Charges": [
+            "Pharmacy\\s*[-—:]?\\s*[₹\\u20b9]?([\\d,\\.]+)",
+            "Pharmacy Bill[:\\-]*\\s*[₹\\u20b9]?([\\d,\\.]+)",
+            "Medicine Charges[:\\-]*\\s*[₹\\u20b9]?([\\d,\\.]+)",
+            "Drug Charges[:\\-]*\\s*[₹\\u20b9]?([\\d,\\.]+)"
+        ],
+        "Lab Reports": [
+            "Lab Reports\\s*[-—:]?\\s*[₹\\u20b9]?([\\d,\\.]+)",
+            "Lab Charges[:\\-]*\\s*[₹\\u20b9]?([\\d,\\.]+)",
+            "Laboratory Charges[:\\-]*\\s*[₹\\u20b9]?([\\d,\\.]+)",
+            "Pathology Charges[:\\-]*\\s*[₹\\u20b9]?([\\d,\\.]+)"
+        ],
+        "PAN": [
+            "PAN[:\\-]*\\s*(\\w{5}\\d{4}\\w{1})",
+            "Pan Number[:\\-]*\\s*(\\w{5}\\d{4}\\w{1})"
+        ],
+        "Bank Name": [
+            "Bank Name and Branch[:\\-]*\\s*(.+)",
+            "Bank Name[:\\-]*\\s*(.+?)(?:Branch|Account No|Account Number|IFSC|MICR|Registered Phone No|Registered Phone Number|Email ID|Registered E-mail ID|Occupation|Hospital Name|Policy Number|PAN|Date of Admission|Declaration Date|Total Expenses|$)",
+            "Name of Bank[:\\-]*\\s*(.+?)(?:Branch|Account No|Account Number|IFSC|MICR|Registered Phone No|Registered Phone Number|Email ID|Registered E-mail ID|Occupation|Hospital Name|Policy Number|PAN|Date of Admission|Declaration Date|Total Expenses|$)",
+            "Bank[:\\-]*\\s*(.+?)(?:Branch|Account No|Account Number|IFSC|MICR|Registered Phone No|Registered Phone Number|Email ID|Registered E-mail ID|Occupation|Hospital Name|Policy Number|PAN|Date of Admission|Declaration Date|Total Expenses|$)"
+        ],
+        "Branch": [
+            "Branch Name[:\\-]*\\s*(.+?)(?:Account No|Account Number|IFSC|MICR|Registered Phone No|Registered Phone Number|Email ID|Registered E-mail ID|Occupation|Hospital Name|Policy Number|PAN|Date of Admission|Declaration Date|Total Expenses|$)",
+            "Branch[:\\-]*\\s*(.+?)(?:Account No|Account Number|IFSC|MICR|Registered Phone No|Registered Phone Number|Email ID|Registered E-mail ID|Occupation|Hospital Name|Policy Number|PAN|Date of Admission|Declaration Date|Total Expenses|$)",
+            "Bank Branch[:\\-]*\\s*(.+?)(?:Account No|Account Number|IFSC|MICR|Registered Phone No|Registered Phone Number|Email ID|Registered E-mail ID|Occupation|Hospital Name|Policy Number|PAN|Date of Admission|Declaration Date|Total Expenses|$)"
+        ],
+        "Account Number": [
+            "Account No\\.?[:\\-]*\\s*(\\d{9,})",
+            "Account Number[:\\-]*\\s*(\\d{9,})",
+            "A/c No\\.?[:\\-]*\\s*(\\d{9,})"
+        ],
+        "IFSC Code": [
+            "IFSC Code[:\\-]*\\s*(\\w{4}0\\w{6})",
+            "IFSC[:\\-]*\\s*(\\w{4}0\\w{6})"
+        ],
+        "Declaration Date": [
+            "Date[:\\-]*\\s*([\\d\\-/]+)",
+            "Declaration Date[:\\-]*\\s*([\\d\\-/]+)",
+            "Claim Date[:\\-]*\\s*([\\d\\-/]+)"
+        ],
+        "Place": [
+            "Place[:\\-]*\\s*(.+)",
+            "City[:\\-]*\\s*(.+)"
+        ]
+    }     
+}    
