@@ -1,0 +1,14 @@
+streamlit==1.26.0
+pytesseract
+pdf2image
+python-docx
+PyMuPDF
+Pillow
+python-pptx        
+  
+
+
+
+
+
+
